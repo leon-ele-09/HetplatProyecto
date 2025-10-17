@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AllComponent from './AllComponent';
+import ListsComponents from './ListsComponents';
+import IndividualComponent from './IndividualComponent';
+import ClickItemRedirect from './ClickItemRedirect';
+import './App.css';
 
 const App = () => {
   const [jsonData, setJsonData] = useState([]);
@@ -12,18 +17,21 @@ const App = () => {
   }, []);
 
   return (
-    <div classname="AppMain" style={{ width: '300px', margin: '0 auto', border: '1px solid blue', padding: '20px' }}>
-      <h1>Dynamic Component Rendering</h1>
-      <div className="App"> 
-        <AllComponent jsonData={jsonData} filter={"Description for Card 1"} />
-      </div>
+    <BrowserRouter>
       <div className="App">
-        <AllComponent jsonData={jsonData} filter={"Description for Card 2"}/>
+        <Routes>
+          <Route path="/allcomponents" element={<AllComponent />} />
+          
+          <Route path="/" element={<ListsComponents />} />
+          
+          <Route path="/item/:id" element={<ClickItemRedirect />} />
+          
+          <Route path="/individual" element={<IndividualComponent data={{title: "Test", description: "Test desc"}} />} />
+          
+          <Route path="*" element={<div><h1>404 - Página no encontrada</h1></div>} />
+        </Routes>
       </div>
-      <div className="App">
-        <AllComponent jsonData={jsonData} filter={"Description for Card 3"}/>
-      </div>
-    </div>
+    </BrowserRouter>
     
     
   );
