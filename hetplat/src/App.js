@@ -284,41 +284,149 @@ function ProjectsTable() {
   );
 }
 // Componente principal que renderiza el ejemplo
-function HomeView(){
-  return(
-    
-        <div>
-
-    <BrowserRouter>
-  <Routes>
-    <Route
-      path="/"
-      element={
-        <div>
-          <h1>Home Page</h1>
-          <VStack>
-            <ProjectsTable />
-          </VStack>
-        </div>
-      }
-    />
-
-    <Route path="/waterfall/:projectId" element={<WaterfallView />} />
-    <Route path="/scrum/:projectId" element={<ScrumView />} />
-  </Routes>
-</BrowserRouter>
-
-
-
-</div>
-  )
+function HomeView() {
+  const navigate = useNavigate();
+  return (
+    <div>
+      
+      <VStack>
+        <HStack>
+        <h1>Home Page</h1>
+        <h3 style={{ marginLeft: "auto" }}>
+          <button onClick={() => navigate(-1)}
+                style={{
+            all: "unset", // removes all default styles
+            cursor: "pointer", // optional: show pointer on hover
+            color: "inherit", // inherit h1 color
+            fontSize: "inherit", // inherit h1 font size
+            fontFamily: "inherit", // inherit font
+          }}>
+            
+            Log Out
+            
+          </button> {/* Go back one step */}
+          </h3>
+          
+        </HStack>
+        
+        <ProjectsTable />
+      </VStack>
+    </div>
+  );
 }
 
+
+function LoginView() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    // Mock validation
+    if (username === 'admin' && password === '1234') {
+      navigate('/home'); // redirect to home
+    } else {
+      setError('Invalid username or password');
+    }
+  };
+
+  return (
+    <VStack style = {{backgroundColor: '#f5f5f5'}}>
+      <h1 style = {{textAlign : 'center'}}>GOJI</h1>
+      <img src ="./logo512.png" style = {{width : '200px' , margin : 'auto', padding : '30px'}}></img>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+      }}
+    >
+      <form
+        onSubmit={handleLogin}
+        style={{
+          background: '#fff',
+          padding: '30px',
+          borderRadius: '8px',
+          boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+          width: '300px',
+        }}
+      >
+        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login</h2>
+        {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+        <div style={{ marginBottom: '15px' }}>
+          <label>Username</label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '8px',
+              marginTop: '5px',
+              borderRadius: '4px',
+              border: '1px solid #ccc',
+            }}
+          />
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <label>Password</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '8px',
+              marginTop: '5px',
+              borderRadius: '4px',
+              border: '1px solid #ccc',
+            }}
+          />
+        </div>
+        <button
+          type="submit"
+          style={{
+            width: '100%',
+            padding: '10px',
+            backgroundColor: '#3498db',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+          }}
+        >
+          Login
+        </button>
+      </form>
+      
+    </div>
+    <p style={{
+    textAlign: 'center',
+    color: '#808080', // A shade of gray
+    fontSize: '0.8em', // Adjust as needed for small size
+  }}>
+        RECOMENDACION : NUNCA pongas le pongas a tu 
+        usuario 'admin' la contraseña '1234' (esa es la contraseña profe)</p></VStack>
+  );
+}
+
+
 const App = () => {
-      return (
-        <HomeView></HomeView>
-        //
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginView />} />
+        <Route path="/home" element={<HomeView />} />
+        <Route path="/waterfall/:projectId" element={<WaterfallView />} />
+        <Route path="/scrum/:projectId" element={<ScrumView />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
+
 
 export default App;
