@@ -15,7 +15,8 @@
     "priority": "Medium",
     "type": "Feature" ,
     "status": "active",
-    "projectId" : "1"
+    "projectId" : "1",
+    "dependsOn" : "item-001"
   },
   { 
     "id": "item-003",
@@ -24,7 +25,8 @@
     "priority": "Low",
     "type": "Task",
     "status": "inactive",
-    "projectId" : "1"
+    "projectId" : "1",
+    "dependsOn" : "item-002"
   },
   { 
     "id": "item-004",
@@ -42,7 +44,8 @@
     "priority": "Medium",
     "type": "Feature",
     "status": "inactive",
-    "projectId" : "1"
+    "projectId" : "1",
+    "dependsOn" : "item-001"
   },
   { 
     "id": "item-006",
@@ -51,6 +54,27 @@
     "priority": "Medium",
     "type": "Task",
     "status": "inactive",
-    "projectId" : "1"
+    "projectId" : "1",
+    "dependsOn" : "item-004"
+  },
+{ 
+    "id": "item-007",
+    "title": "Task 7", 
+    "description": "Code review is needed for the new DB logic.",
+    "priority": "Medium",
+    "type": "Task",
+    "status": "inactive",
+    "projectId" : "1",
+    "dependsOn" : "item-006"
+  },
+{ 
+    "id": "item-008",
+    "title": "Task 8", 
+    "description": "Code review is needed for the new DB logic.",
+    "priority": "Medium",
+    "type": "Task",
+    "status": "active",
+    "projectId" : "1",
+    "dependsOn" : "item-003"
   }
 ]

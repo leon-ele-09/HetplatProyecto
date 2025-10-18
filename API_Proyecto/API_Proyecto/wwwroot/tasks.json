@@ -5,8 +5,7 @@
     "description": "Description for Card 1",
     "priority": "High",
     "type": "Bug",
-    "status": "active",
-    "projectId" : "1"
+    "status": "active"
   },
   { 
     "id": "item-002",
@@ -14,8 +13,7 @@
     "description": "Description for Card 2",
     "priority": "Medium",
     "type": "Feature" ,
-    "status": "active",
-    "projectId" : "1"
+    "status": "active"
   },
   { 
     "id": "item-003",
@@ -23,8 +21,7 @@
     "description": "Description for Card 3",
     "priority": "Low",
     "type": "Task",
-    "status": "inactive",
-    "projectId" : "1"
+    "status": "inactive"
   },
   { 
     "id": "item-004",
@@ -32,8 +29,7 @@
     "description": "Users are reporting they cannot log in.",
     "priority": "High",
     "type": "Bug",
-    "status": "inactive",
-    "projectId" : "1"
+    "status": "inactive"
   },
   { 
     "id": "item-005",
@@ -41,8 +37,7 @@
     "description": "The new homepage is complete and staged.",
     "priority": "Medium",
     "type": "Feature",
-    "status": "inactive",
-    "projectId" : "1"
+    "status": "inactive"
   },
   { 
     "id": "item-006",
@@ -50,7 +45,6 @@
     "description": "Code review is needed for the new DB logic.",
     "priority": "Medium",
     "type": "Task",
-    "status": "inactive",
-    "projectId" : "1"
+    "status": "inactive"
   }
 ]
