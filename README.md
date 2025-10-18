@@ -18,6 +18,7 @@ De momento no se implementa la funcion de añadir tareas o proyectos ya que seri
 ## Como ejecutar
 
 Es importante tener instalado ASP.NET, visual studio, y npm. 
+npm : https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 Los siguientes paquetes de npm son necesarios para la correcta ejecución del proyecto.
 
