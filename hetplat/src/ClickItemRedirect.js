@@ -5,17 +5,18 @@ const ClickItemRedirect = ({ id, onClose }) => {
   const [notes, setNotes] = useState('');
 
   useEffect(() => {
-    fetch('/data.json')
-      .then((response) => response.json())
-      .then((jsonData) => {
-        const item = jsonData.find(item => item.id === id);
-        setData(item);
+    if (!id) return;
+
+    fetch(`https://localhost:7286/api/Data/task/${id}`) // fetch single task by ID
+      .then((response) => {
+        if (!response.ok) throw new Error("Task not found");
+        return response.json();
       })
-      .catch((error) => console.error('Error fetching data: ', error));
+      .then((task) => setData(task))
+      .catch((error) => console.error('Error fetching task: ', error));
   }, [id]);
 
   const handleClose = () => {
-    console.log('Cerrando popup');
     onClose();
   };
 
@@ -23,7 +24,7 @@ const ClickItemRedirect = ({ id, onClose }) => {
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 9999 }}>
-      <div 
+      <div
         className="popup-overlay"
         onClick={handleClose}
         style={{
@@ -36,8 +37,8 @@ const ClickItemRedirect = ({ id, onClose }) => {
           cursor: 'pointer'
         }}
       />
-      
-      <div 
+
+      <div
         className="card popup-container"
         onClick={(e) => e.stopPropagation()}
         style={{
@@ -45,30 +46,43 @@ const ClickItemRedirect = ({ id, onClose }) => {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          zIndex: 10000
+          zIndex: 10000,
+          backgroundColor: '#fff',
+          padding: '20px',
+          borderRadius: '8px',
+          width: '300px'
         }}
       >
-        <button 
-          className="popup-close-btn" 
+        <button
+          className="popup-close-btn"
           onClick={handleClose}
+          style={{
+            float: 'right',
+            fontSize: '18px',
+            border: 'none',
+            background: 'transparent',
+            cursor: 'pointer'
+          }}
         >
           ×
         </button>
+
         <h1>{data.title}</h1>
-        <h2>{data.description}</h2>
-        
+        <p>{data.description}</p>
+
         <div className="popup-content-label">Priority</div>
         <div className="popup-content-value">{data.priority}</div>
-        
+
         <div className="popup-content-label">Type</div>
         <div className="popup-content-value">{data.type}</div>
-        
+
         <div className="popup-content-label">Notes</div>
-        <textarea 
+        <textarea
           className="popup-textarea"
           placeholder="Add your notes here..."
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
+          style={{ width: '100%', height: '60px', marginTop: '5px' }}
         />
       </div>
     </div>
