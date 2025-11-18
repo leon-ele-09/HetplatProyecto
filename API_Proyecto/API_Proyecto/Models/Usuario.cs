@@ -1,4 +1,6 @@
-﻿namespace API_Proyecto.Models
+﻿
+/*
+namespace API_Proyecto.Models
 {
     public class Usuario
     {
@@ -84,3 +86,4 @@
         }
     }
 }
+*/

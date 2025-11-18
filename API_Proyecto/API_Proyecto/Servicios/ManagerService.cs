@@ -1,5 +1,5 @@
 ﻿using API_Proyecto.Models;
-
+/*
 namespace API_Proyecto.Servicios
 {
     public class ManagerService
@@ -11,3 +11,4 @@ namespace API_Proyecto.Servicios
 
     }
 }
+*/

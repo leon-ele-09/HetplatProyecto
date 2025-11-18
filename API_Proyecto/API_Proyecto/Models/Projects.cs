@@ -1,5 +1,6 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 
+/*
 namespace API_Proyecto.Models
 {
     public class Projects
@@ -34,3 +35,4 @@ namespace API_Proyecto.Models
         public List<Usuario> getUsuarios() { return usuarios; }
     }
 }
+*/
