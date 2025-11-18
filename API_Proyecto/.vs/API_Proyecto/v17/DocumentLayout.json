@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "API_Proyecto\\appsettings.json",
               "ToolTip": "C:\\Users\\lange\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\appsettings.json",
               "RelativeToolTip": "API_Proyecto\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-18T07:44:21.785Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "API_Proyecto\\Models\\AppDbContext.cs",
               "ViewState": "AgIAALQAAAAAAAAAAAAowMwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:59:51.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T06:59:51.133Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "API_Proyecto\\Program.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:51:14.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T06:51:14.541Z"
             },
             {
               "$type": "Document",
@@ -97,14 +95,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Tarea.cs",
@@ -114,8 +104,7 @@
               "RelativeToolTip": "API_Proyecto\\Models\\Tarea.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAUwEcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T01:55:48.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T01:55:48.893Z"
             },
             {
               "$type": "Document",
@@ -127,8 +116,7 @@
               "RelativeToolTip": "API_Proyecto\\Servicios\\ManagerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:36:20.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:36:20.429Z"
             },
             {
               "$type": "Document",
@@ -140,8 +128,7 @@
               "RelativeToolTip": "API_Proyecto\\Models\\Usuario.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAFgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T02:27:00.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T02:27:00.545Z"
             },
             {
               "$type": "Document",
@@ -153,8 +140,15 @@
               "RelativeToolTip": "API_Proyecto\\Models\\Projects.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAACUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T01:55:34.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T01:55:34.043Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
