@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\",
+  "WorkspaceRootPath": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\tomat\\unityrepos\\hetplatproyecto\\api_proyecto\\api_proyecto\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\crist\\onedrive\\documentos\\github\\hetplatproyecto\\api_proyecto\\api_proyecto\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\tomat\\unityrepos\\hetplatproyecto\\api_proyecto\\api_proyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\crist\\onedrive\\documentos\\github\\hetplatproyecto\\api_proyecto\\api_proyecto\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\crist\\onedrive\\documentos\\github\\hetplatproyecto\\api_proyecto\\api_proyecto\\models\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\models\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|c:\\users\\crist\\onedrive\\documentos\\github\\hetplatproyecto\\api_proyecto\\api_proyecto\\servicios\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A003BBB-BBC4-4BAE-BB62-D42E8A71451E}|API_Proyecto\\API_Proyecto.csproj|solutionrelative:api_proyecto\\servicios\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "API_Proyecto\\Models\\Tarea.cs",
+              "ToolTip": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Tarea.cs",
+              "RelativeToolTip": "API_Proyecto\\Models\\Tarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T01:55:48.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Servicios\\ManagerService.cs",
+              "RelativeDocumentMoniker": "API_Proyecto\\Servicios\\ManagerService.cs",
+              "ToolTip": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Servicios\\ManagerService.cs",
+              "RelativeToolTip": "API_Proyecto\\Servicios\\ManagerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T02:36:20.429Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
@@ -27,27 +61,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Controllers\\ApiController.cs",
-              "RelativeDocumentMoniker": "API_Proyecto\\Controllers\\ApiController.cs",
-              "ToolTip": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Controllers\\ApiController.cs",
-              "RelativeToolTip": "API_Proyecto\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAhwHAAAAAAAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "API_Proyecto\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Usuario.cs",
+              "RelativeToolTip": "API_Proyecto\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T22:46:59.966Z",
+              "WhenOpened": "2025-11-18T02:27:00.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Program.cs",
-              "RelativeDocumentMoniker": "API_Proyecto\\Program.cs",
-              "ToolTip": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Program.cs",
-              "RelativeToolTip": "API_Proyecto\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Projects.cs",
+              "DocumentMoniker": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Projects.cs",
+              "RelativeDocumentMoniker": "API_Proyecto\\Models\\Projects.cs",
+              "ToolTip": "C:\\Users\\CRIST\\OneDrive\\Documentos\\GitHub\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\Models\\Projects.cs",
+              "RelativeToolTip": "API_Proyecto\\Models\\Projects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T22:46:26.827Z"
+              "WhenOpened": "2025-11-18T01:55:34.043Z",
+              "EditorCaption": ""
             }
           ]
         }
