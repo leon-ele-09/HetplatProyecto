@@ -22,6 +22,9 @@ public partial class AppDbContext : DbContext
     public virtual DbSet<ProjectMember> ProjectMembers { get; set; }
     public virtual DbSet<Task> Tasks { get; set; }
 
+    // ❌ Se elimina TaskDependency como DbSet para evitar duplicación de tablas
+    // public virtual DbSet<TaskDependency> TaskDependencies { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseNpgsql("Name=SupabaseConnection");
 
@@ -179,7 +182,7 @@ public partial class AppDbContext : DbContext
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("task_project_id_fkey");
 
-            // Configuración de task_dependencies (relación M:M entre Tasks)
+            // Configuración del M:M con task_dependencies
             entity.HasMany(d => d.DependentTasks).WithMany(p => p.PrerequisiteTasks)
                 .UsingEntity<Dictionary<string, object>>(
                     "TaskDependency",

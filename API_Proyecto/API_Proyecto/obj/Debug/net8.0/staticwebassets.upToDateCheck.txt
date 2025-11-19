@@ -1,3 +1,0 @@
-wwwroot\data\tasks.json
-wwwroot\data\taskswaterfall.json
-wwwroot\tasks.json

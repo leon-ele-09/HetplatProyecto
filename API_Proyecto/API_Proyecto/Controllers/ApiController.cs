@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+
+using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -115,7 +117,7 @@ namespace API_Proyecto.Controllers
     }
 
     // Minimal models
-    public class Project
+    public class Projects
     {
         public string Id { get; set; }
         public string Name { get; set; }
@@ -168,3 +170,5 @@ public class SingleOrArrayConverter : JsonConverter<List<string>>
 
 
 }
+
+*/
