@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\efrai\\OneDrive\\Documents\\Programas\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj": {}
+    "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\efrai\\OneDrive\\Documents\\Programas\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj": {
+    "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\efrai\\OneDrive\\Documents\\Programas\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+        "projectUniqueName": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
         "projectName": "API_Proyecto",
-        "projectPath": "C:\\Users\\efrai\\OneDrive\\Documents\\Programas\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
-        "packagesPath": "C:\\Users\\efrai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\efrai\\OneDrive\\Documents\\Programas\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\obj\\",
+        "projectPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+        "packagesPath": "C:\\Users\\tomat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\efrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tomat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -64,6 +72,10 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -75,6 +87,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
             }
           },
           "imports": [

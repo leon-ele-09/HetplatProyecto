@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using API_Proyecto.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using API_Proyecto.Models;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace API_Proyecto.Controllers
 {
@@ -45,5 +46,32 @@ namespace API_Proyecto.Controllers
 
             return Ok(listaTarjetas);
         }
+    }
+    public class TarjetaTarea
+    {
+        [JsonPropertyName("id")]
+        public string IDItem { get; set; }
+
+        [JsonPropertyName("title")]
+        public string Titulo { get; set; }
+
+        [JsonPropertyName("description")]
+        public string Descripcion { get; set; }
+
+        [JsonPropertyName("priority")]
+        public string Prioridad { get; set; }
+
+        [JsonPropertyName("type")]
+        public string Tipo { get; set; }
+
+        [JsonPropertyName("status")]
+        public string Estado { get; set; }
+
+        [JsonPropertyName("projectId")]
+        public string IDProyecto { get; set; }
+
+        [JsonPropertyName("dependsOn")]
+
+        public object DependeDe { get; set; }
     }
 }
