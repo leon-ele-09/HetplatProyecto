@@ -8186,11 +8186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+      "projectUniqueName": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
       "projectName": "API_Proyecto",
-      "projectPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+      "projectPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
       "packagesPath": "C:\\Users\\tomat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\obj\\",
+      "outputPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8300,7 +8300,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "API_Proyecto depende de Microsoft.Extensions.Configuration.Json (>= 8.0.11), pero no se encontró Microsoft.Extensions.Configuration.Json 8.0.11. Microsoft.Extensions.Configuration.Json 9.0.0 se resolvió en su lugar.",
+      "message": "API_Proyecto depends on Microsoft.Extensions.Configuration.Json (>= 8.0.11) but Microsoft.Extensions.Configuration.Json 8.0.11 was not found. Microsoft.Extensions.Configuration.Json 9.0.0 was resolved instead.",
       "libraryId": "Microsoft.Extensions.Configuration.Json",
       "targetGraphs": [
         "net8.0"

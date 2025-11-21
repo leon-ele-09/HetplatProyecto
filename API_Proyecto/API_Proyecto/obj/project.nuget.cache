@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6QAE23pnFo=",
+  "dgSpecHash": "jW4/2LDMMlo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+  "projectFilePath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomat\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tomat\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -178,10 +178,10 @@
     {
       "code": "NU1603",
       "level": "Warning",
-      "message": "API_Proyecto depende de Microsoft.Extensions.Configuration.Json (>= 8.0.11), pero no se encontró Microsoft.Extensions.Configuration.Json 8.0.11. Microsoft.Extensions.Configuration.Json 9.0.0 se resolvió en su lugar.",
-      "projectPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+      "message": "API_Proyecto depends on Microsoft.Extensions.Configuration.Json (>= 8.0.11) but Microsoft.Extensions.Configuration.Json 8.0.11 was not found. Microsoft.Extensions.Configuration.Json 9.0.0 was resolved instead.",
+      "projectPath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto-main\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
+      "filePath": "C:\\Users\\tomat\\UnityRepos\\HetplatProyecto\\API_Proyecto\\API_Proyecto\\API_Proyecto.csproj",
       "libraryId": "Microsoft.Extensions.Configuration.Json",
       "targetGraphs": [
         "net8.0"
