@@ -28,7 +28,6 @@ C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\ne
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\API_Proy.0C3C69D3.Up2Date
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\API_Proyecto.dll
 C:\Users\tomat\UnityRepos\HetplatProyecto\API_Proyecto\API_Proyecto\obj\Debug\net8.0\refint\API_Proyecto.dll

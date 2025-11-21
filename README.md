@@ -39,4 +39,4 @@ Una vez se tengan todos los paquetes instalados, abra el archivo de VisualStudio
 ### Iniciar la SPA
 Dentro del directorio de hetplat/src abra una linea de comando (cmd) y ejecute el comando ``npm start``
 
-En automatico se abre una pagina de swagger para probar que la API funciona correctamente, y se abre la pagina de Login de la APP.
+En automatico se abre una pagina de swagger para probar que la API funciona correctamente, y se abre la pagina de Login de la APP en localhost:3000.

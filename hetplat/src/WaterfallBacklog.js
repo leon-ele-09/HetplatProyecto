@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-
-
+import { useParams, useNavigate } from "react-router-dom";
 
 const HStack = ({ children, style, gap = '1rem', justifyContent = 'flex-start', alignItems = 'center' }) => {
   const hStackStyle = {
@@ -10,11 +8,10 @@ const HStack = ({ children, style, gap = '1rem', justifyContent = 'flex-start', 
     gap,
     justifyContent,
     alignItems,
-    ...style, // Allows user to override or add styles.
+    ...style,
   };
   return <div style={hStackStyle}>{children}</div>;
 };
-
 
 const VStack = ({ children, style, gap = '0.75rem', justifyContent = 'flex-start', alignItems = 'stretch' }) => {
   const vStackStyle = {
@@ -29,66 +26,74 @@ const VStack = ({ children, style, gap = '0.75rem', justifyContent = 'flex-start
 };
 
 const ZStack = ({ children, style }) => {
-  // El estilo del contenedor padre
   const zStackContainerStyle = {
     position: 'relative',
     ...style, 
   };
 
-  
   const stackedChildren = React.Children.map(children, (child) => {
     if (!React.isValidElement(child)) {
       return child;
     }
 
-    // Agrega absolute
     const childStyleWithPosition = {
-      ...child.props.style, // Preserva los estilos del hijo 
+      ...child.props.style,
       position: 'absolute', 
     };
 
-    
     return React.cloneElement(child, { style: childStyleWithPosition });
   });
-return (
+
+  return (
     <div style={zStackContainerStyle}>
       {stackedChildren}
     </div>
   );
 };
 
-
-
-/////////////////////////////
-export default function DependentTaskList() {
+export default function DependentTaskList({ refreshTrigger }) {
   const [tasks, setTasks] = useState([]);
-  
-const { projectId } = useParams();
+  const { projectId } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://localhost:7286/api/Data/tasks?projectId=${projectId}`)
-      .then((res) => res.json())
-      .then((data) => setTasks(data))
+    const token = localStorage.getItem('token');
+    
+    fetch(`https://localhost:7286/api/tasks?projectId=${projectId}`, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    })
+      .then((res) => {
+        if (res.status === 403) {
+          alert('No tienes acceso a este proyecto');
+          navigate('/home');
+          return;
+        }
+        if (!res.ok) throw new Error('Failed to fetch tasks');
+        return res.json();
+      })
+      .then((data) => {
+        if (data) setTasks(data);
+      })
       .catch((err) => console.error("Error loading data:", err));
-  }, [projectId]);
+  }, [projectId, navigate, refreshTrigger]);
 
-  // Build levels based on dependencies
   const buildLevels = (tasks) => {
     const map = {};
     tasks.forEach((t) => (map[t.id] = { ...t }));
     const levels = [];
     const added = new Set();
-    const levelMap = {}; // Track which level each task is in
+    const levelMap = {};
     
     while (added.size < tasks.length) {
       const level = tasks.filter((t) => {
         if (added.has(t.id)) return false;
         if (!t.dependsOn) return true;
-        // Handle both single dependency and array of dependencies
         const deps = Array.isArray(t.dependsOn) ? t.dependsOn : [t.dependsOn];
         return deps.every(dep => added.has(dep));
       });
-      if (level.length === 0) break; // prevent infinite loop on broken deps
+      if (level.length === 0) break;
       level.forEach((t) => {
         added.add(t.id);
         levelMap[t.id] = levels.length;
@@ -96,7 +101,6 @@ const { projectId } = useParams();
       levels.push(level);
     }
     
-    // Find lowest level task with multiple dependencies
     let lowestMultiDepTask = null;
     let lowestLevel = -1;
     
@@ -124,13 +128,13 @@ const { projectId } = useParams();
         <HStack gap="2rem" style={{ alignItems: "flex-start" }}>
           {levels.map((levelTasks, idx) => (
             <VStack key={idx} gap="1rem" style={{ alignItems: "flex-start" }}>
-              <p style = {{marginTop : 'auto'}}>Nivel de dependencia : {idx}</p>
+              <p style={{ marginTop: 'auto' }}>Nivel de dependencia : {idx}</p>
               {levelTasks.map((task) => (
                 <div
                   key={task.id}
                   style={{
                     background: "#e0f7fa",
-                    border:  "1px solid #ddd",
+                    border: "1px solid #ddd",
                     borderRadius: "8px",
                     padding: "12px",
                     minWidth: "150px",
@@ -139,13 +143,11 @@ const { projectId } = useParams();
                 >
                   <h3 style={{ margin: 0, fontSize: "16px" }}>
                     {task.title}
-                    
                   </h3>
                   <p style={{ margin: "4px 0 0", fontSize: "14px", color: "#555" }}>{task.description}</p>
                   <div style={{ fontSize: "13px", color: "#666", marginTop: "4px" }}>
-                    <span>Priority: {task.priority}</span> | <span>Type: {task.type}</span> <br></br>
-                    <p>Depends on : {task.dependsOn.length === 0 ? "Nothing" : task.dependsOn.join(", ") }</p>
-
+                    <span>Priority: {task.priority}</span> | <span>Type: {task.type}</span> <br />
+                    <p>Depends on : {task.dependsOn?.length === 0 ? "Nothing" : task.dependsOn?.join(", ") || "Nothing"}</p>
                   </div>
                 </div>
               ))}
